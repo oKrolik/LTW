@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US" data-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://web.fe.up.pt/~arestivo/page/css/style.css">
+    <link rel="stylesheet" href="https://web.fe.up.pt/~arestivo/page/css/code.css">
+    <link rel="icon" type="image/ico" href="https://web.fe.up.pt/~arestivo/page/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>André Restivo</title>
+    <script src="https://web.fe.up.pt/~arestivo/page/scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="https://web.fe.up.pt/~arestivo/page/">André Restivo</a><i class="fa-solid fa-sun theme-selector"></i></h1>
+
+        <ul id="crumbs">
+            <li><a href="https://web.fe.up.pt/~arestivo/page/">home</a></li>
+            <li>
+                exercises
+            </li>
+            <li>
+                <a href="https://web.fe.up.pt/~arestivo/page/exercises/html/">html</a>
+            </li>
+        </ul>
+
+    </header>
+    <main>
+        <h2 id="html-exercises">HTML Exercises</h2>
+        <h3 id="1-online-newspaper">1. Online Newspaper</h3>
+        <p>Using <strong>HTML 5 only</strong>, create a <strong>prototype</strong> of an <strong>online
+                newspaper</strong>:</p>
+        <ul>
+            <li>Throughout this exercise, <strong>do not worry about design</strong>. HTML is a markup language with
+                <em>pre-defined presentation semantics</em>; the design is handled by CSS (more on this next week).</li>
+            <li>For now, you can edit your HTML files locally.</li>
+            <li><a href="https://validator.w3.org/">Validate</a> and verify the result on the browser as you proceed.
+            </li>
+        </ul>
+        <p><strong>Some tips and ideas</strong>:</p>
+        <ul>
+            <li>Use the site <a href="http://www.lipsum.com/">http://www.lipsum.com/</a> if you need to generate example
+                paragraphs.</li>
+            <li>Use the site <a href="https://picsum.photos/">https://picsum.photos/</a> if you need some example
+                photos.</li>
+        </ul>
+        <p><strong>Instructions</strong>:</p>
+        <ol>
+            <li>In this exercise, you will create the pages described in the following image:</li>
+        </ol>
+        <p><img src="https://web.fe.up.pt/~arestivo/page/exercises/html/newspaper.svg" alt=""></p>
+        <ul>
+            <li>The <strong>main</strong> page represents the main page of the newspaper having a series of
+                <strong>abbreviated</strong> news items.</li>
+            <li>The <strong>news article</strong> page has one particular news item in its <strong>complete</strong>
+                form. It also has comments written by the readers.</li>
+            <li>The <strong>section</strong> page is very similar to the <strong>main</strong> page, but only has news
+                about a particular topic (<em>e.g.</em>, sports).</li>
+        </ul>
+        <ol start="2">
+            <li>For each page, create a new HTML file, open it with your favorite code editor, and add the following
+                basic HTML code:</li>
+        </ol>
+        <pre><code class="language-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Online Newspaper<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+        <ol start="3">
+            <li>
+                <p>Open the <strong>main</strong> page in a <strong>web browser</strong> (the most straightforward way
+                    is to drag the file into a new tab). </p>
+            </li>
+            <li>
+                <p>Complete each page using the <strong>correct semantic elements</strong>.</p>
+                <ul>
+                    <li>The <strong>header</strong> of each page should have:<ul>
+                            <li>The name of the newspaper.</li>
+                            <li>A logo.</li>
+                            <li>The section&#39;s name (if it&#39;s a <strong>section</strong> page).</li>
+                            <li>Clicking any of these elements should take the user back to the <strong>main</strong>
+                                page.</li>
+                        </ul>
+                    </li>
+                    <li>The <strong>menu</strong> should have links to each one of the <strong>section</strong> pages
+                        (<em>e.g.</em>, sports, politics, and local) <ul>
+                            <li>The links should be part of an unordered list.</li>
+                            <li>For now, all of those can point to <em>section.html</em>.</li>
+                        </ul>
+                    </li>
+                    <li>Each <strong>article</strong> should have a title, some paragraphs, an image, and a footer. <ul>
+                            <li>In the <strong>main</strong> and <strong>section</strong> pages, only a couple of
+                                paragraphs of each news item should be shown. </li>
+                            <li>The <strong>news article</strong> page should also have some comments. Each
+                                <strong>comment</strong> should have some text, a date/time, and the author&#39;s
+                                username. After all the comments, there should be a <strong>form</strong> (with a title,
+                                a username and a text fields) that allows users to add more comments. </li>
+                            <li>The <strong>footer</strong> should contain the date/time and the author&#39;s name. In
+                                the <strong>main</strong> and <strong>section</strong> pages, there should also be a
+                                &quot;Read more&quot; link that redirects the user to the <strong>news article</strong>
+                                page containing the complete news item.</li>
+                        </ul>
+                    </li>
+                    <li>The <strong>footer</strong> of each page should have a Copyright Notice. Use a <a
+                            href="https://www.amp-what.com/unicode/search/">character entity</a> for the &copy; symbol.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Don&#39;t forget to <a href="https://validator.w3.org/">validate</a> the pages when you&#39;re done.
+                </p>
+            </li>
+        </ol>
+        <p><strong>What did I learn:</strong></p>
+        <ul>
+            <li>The basics of HTML documents.</li>
+            <li>The usage of section elements.</li>
+            <li>How to validate an HTML page.</li>
+            <li>HTML is not for design!</li>
+        </ul>
+        <h3 id="2-complex-table">2. Complex Table</h3>
+        <p>Using <strong>HTML 5 only</strong>, create a document representing the following <a class="slide"
+                href="https://web.fe.up.pt/~arestivo/page/../slides/?s=html5#tables" title="">table</a>. </p>
+        <p><img src="https://web.fe.up.pt/~arestivo/page/exercises/html/table.png" alt=""></p>
+        <p>As we still don&#39;t know CSS, let&#39;s use the attribute border= &quot;1&quot; to visualize the result
+            better:</p>
+        <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">border</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+</code></pre>
+        <p>Or, if you want to be fancy, you can use CSS (<strong>spoiler alert</strong>). Just add this to the
+            document&#39;s <strong>head</strong> element:</p>
+        <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css">
+<span class="hljs-selector-tag">table</span> {
+   <span class="hljs-attribute">border-collapse</span>: collapse;
+}
+<span class="hljs-selector-tag">th</span>, <span class="hljs-selector-tag">td</span> {
+   <span class="hljs-attribute">border</span>:<span class="hljs-number">1px</span> solid;
+   <span class="hljs-attribute">padding</span>: <span class="hljs-number">0.5em</span>;
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</code></pre>
+        <p><strong>Tip:</strong> The easiest way to implement complex tables in HTML is to think about the table row by
+            row. This table has <strong>6 rows</strong>.</p>
+        <p><strong>When you are finished</strong>:</p>
+        <ol>
+            <li><a href="https://validator.w3.org/">Validate</a> the HTML code.</li>
+            <li>Include a <a
+                    href="https://www.google.com/search?tbm=isch&amp;as_q=html5+valid+icon&amp;tbs=isz:lt">valid HTML 5
+                    icon</a> on the webpage.</li>
+            <li>Revalidate the document.</li>
+        </ol>
+        <p><strong>What did I learn:</strong></p>
+        <ul>
+            <li>How to create a complex HTML table.</li>
+            <li>Tables are for presenting tabular data, not for design!</li>
+        </ul>
+        <!--
+### 3. Online
+
+Try putting your code from [exercise 1](#1-online-newspaper) online, using FEUP's [webservers](/~arestivo/page/exercises/servers).
+
+<div class="notice warning">There have been many changes in the last year, so these instructions might not work very smoothly. If you are having problems with this exercise, don't worry; eventually, we will figure it out.</div>
+-->
+
+        <h3 id="3-form">3. Form</h3>
+        <ol>
+            <li>Create a web page containing a <strong>form</strong> where users should input the following data:<ul>
+                    <li>Name (text).</li>
+                    <li>Age (radio buttons with options &quot;&lt;18&quot;, &quot;19-35&quot;, &quot;36-48&quot; and
+                        &quot;&gt;49&quot;)).</li>
+                    <li>Profession (text but with some predefined suggestions &mdash; use a <strong>datalist</strong>).
+                    </li>
+                    <li>Country (a dropdown box &ndash; add some countries).</li>
+                    <li>Interests (a list where users can check several &ndash; make up some choices).</li>
+                    <li>How did the user find out about the site (larger text field).</li>
+                </ul>
+            </li>
+            <li>The <em>name</em> and <em>country</em> fields should be <strong>required</strong>.</li>
+            <li>The form should also have a submit button, use the <strong>button</strong> element.</li>
+            <li>Each field should have a <strong>label</strong>.</li>
+            <li><a href="https://validator.w3.org/">Validate</a> the page when you are finished.</li>
+            <li>Try to submit the form and verify what happens in the URL bar using <strong>POST</strong> and
+                <strong>GET</strong> as the form methods.</li>
+        </ol>
+        <p><strong>What did I learn:</strong></p>
+        <ul>
+            <li>How to create an HTML form.</li>
+            <li>How to use labels to improve accessibility.</li>
+            <li>How to use character entities.</li>
+            <li>The difference between &quot;GET&quot; and &quot;POST&quot; action in forms (more about this later).
+            </li>
+        </ul>
+        <h3 id="4-extra">4. Extra</h3>
+        <ol>
+            <li>Pick a page from a website you use a lot</li>
+            <li>Without looking at its HTML code, try writing your own version using good HTML semantics.</li>
+            <li><a href="https://validator.w3.org/">Validate</a> the HTML code.</li>
+        </ol>
+
+    </main>
+    <footer>
+        Created using <a href="https://www.npmjs.com/package/sitory">Sitory</a>. Copyright 2022 André Restivo.
+    </footer>
+</body>
+
+</html>
