@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label>Name:
+                <input type="text" required>
+            </label>
+            <div>
+            </div>
+            <p>Age:</p>
+            <label>
+                <input type="radio" name="age" value="-18">&lt;18
+            </label>
+            <label>
+                <input type="radio" name="age" value="19-35">19-35
+            </label>
+            <label>
+                <input type="radio" name="age" value="36-48">36-48
+            </label>
+            <label>
+                <input type="radio" name="age" value="+49">&gt;49
+            </label>
+        </div>
+        <div>
+            <label>Profession:
+                <input name="profession" list="professions" value="Student">
+                <datalist id="professions">
+                    <option>Developer</option>
+                    <option selected>Student</option>
+                    <option>Professor</option>
+                </datalist>
+            </label>
+        </div>
+        <div>
+            <label>
+                Country:
+                <select name="country" required>
+                    <option value="" disabled selected hidden>Choose an option</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Spain">Spain</option>
+                    <option value="England">England</option>
+                    <option value="France">France</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <p>Interests:</p>
+            <label>
+                <input type="checkbox" name="interests" value="c++">C++
+            </label>
+            <label>
+                <input type="checkbox" name="interests" value="java">Java
+            </label>
+            <label>
+                <input type="checkbox" name="interests" value="haskell">Haskell
+            </label>
+            <label>
+                <input type="checkbox" name="interests" value="python">Python
+            </label>
+        </div>
+        <div>
+            <label>How did you found about the site:
+                <textarea name="found"></textarea>
+            </label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
