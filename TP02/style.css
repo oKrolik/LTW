@@ -1,0 +1,97 @@
+:root {
+    --beige: #f7ede2;
+    --olive: #84a59d;
+    --black: #000;
+    --red: #f28482;
+    --light-red: #f5cac3;
+}
+
+body {
+    margin: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-end {
+    text-align: end;
+}
+
+h1 {
+    font-size: 6rem;
+} 
+
+h2 {
+    font-size: 3rem;
+}
+
+main {
+    width: 700px;
+    margin: auto;
+    background-color: var(--beige);
+    padding: 3em;
+}
+
+.text-olive {
+    color: var(--olive);
+}
+
+.imperial-script-regular {
+    font-family: "Imperial Script";
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ruda-regular {
+    font-family: "Ruda", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.crimson-pro-regular {
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.border-bottom {
+    border-bottom: 2px solid var(--black);
+}
+
+.red-background {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-style:  dashed solid dashed dashed;
+    background-color: var(--light-red);
+    border-color: var(--red);
+    border-top-width: 3px;
+    border-right-width: 10px;
+    border-left-width: 3px;
+    border-bottom-width: 3px;
+    padding: 0px 10px 10px 20px;
+    font-size: 1.1rem;
+}
+
+.red-background p {
+    text-transform: capitalize;
+    font-variant: small-caps;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#ingredients p {
+    font-size: 1.2rem;
+}
