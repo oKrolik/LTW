@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Poppins:400,700');
+
+:root {
+    /* main colors */
+    --black: #2A2F33;
+    --blue: #046DD5;
+    --salmon: #F4655F;
+    /* section colors */
+    --red: #E1493E;
+    --green: #8ABA56;
+    --purple: #5B4282;
+    --orange: #FF8932;
+    --sky: #19B6E9;
+    --pink: #E84C8B;
+    /* other colors */
+    --white: #FFF;
+}
+
+.lora {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    background-color: var(--white);
+}
+
+header {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 1em;
+    margin: 1em 1em 0em 1em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0em 1em 1em 1em;
+    font-family: "Poppins", sans-serif;
+}
+
+nav ul li {
+    padding: 1em;
+    list-style: none;
+}
+
+nav ul li:nth-child(1) {
+    border-top: 5px solid var(--red);
+}
+
+nav ul li:nth-child(2) {
+    border-top: 5px solid var(--green);
+}
+
+nav ul li:nth-child(3) {
+    border-top: 5px solid var(--purple);
+}
+
+nav ul li:nth-child(4) {
+    border-top: 5px solid var(--orange);
+}
+
+nav ul li:nth-child(5) {
+    border-top: 5px solid var(--sky);
+}
+
+nav ul li:nth-child(6) {
+    border-top: 5px solid var(--pink);
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+aside {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1em;
+}
+
+aside h1, aside a {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 400;
+}
