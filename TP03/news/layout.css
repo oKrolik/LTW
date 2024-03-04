@@ -37,3 +37,12 @@ footer {
     grid-row-start: 4;
     grid-row-end: 5;
 }
+
+section article footer {
+    overflow: auto;
+    text-align: right;
+}
+
+.author {
+    float: left;
+}

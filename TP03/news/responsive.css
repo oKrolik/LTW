@@ -1,0 +1,136 @@
+@media screen and (max-width: 60em) {
+    aside {
+        display: none;
+    }
+
+    nav {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    section {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    nav ul li {
+        padding: 1em 3.4em 1em 3.3em;
+        list-style: none;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    body {
+        width: 30em;
+    }
+
+    header h2 {
+        display: none;
+    }
+
+    #signup {
+        float: none;
+        padding-left: 0;
+    }
+
+    input {
+        background-color: #2A2F33;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    nav {
+        text-align: start;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    #menu ul {
+        display: none;
+        /* Esconde o <ul> por padrão */
+    }
+
+    #hamburger:checked~ul {
+        display: block;
+        /* Mostra o <ul> quando o checkbox está marcado */
+    }
+
+    .hamburger:before {
+        content: "\2630";
+        /* ☰ - Ícone de menu hamburguer */
+    }
+
+    #hamburger:checked+.hamburger:before {
+        content: "\2715";
+        /* ✕ - Ícone de fechar (X) quando o checkbox está marcado */
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        padding: 1em 0em 1em 1em;
+        list-style: none;
+        width: 100%;
+    }
+
+    nav ul li:hover {
+        background-color: #2A2F33;
+    }
+
+    nav ul li a:hover {
+        color: #FFF;
+    }
+
+    nav ul li:nth-child(1) {
+        border-top: none;
+        border-left: 5px solid var(--red);
+    }
+
+    nav ul li:nth-child(2) {
+        border-top: none;
+        border-left: 5px solid var(--green);
+    }
+
+    nav ul li:nth-child(3) {
+        border-top: none;
+        border-left: 5px solid var(--purple);
+    }
+
+    nav ul li:nth-child(4) {
+        border-top: none;
+        border-left: 5px solid var(--orange);
+    }
+
+    nav ul li:nth-child(5) {
+        border-top: none;
+        border-left: 5px solid var(--sky);
+    }
+
+    nav ul li:nth-child(6) {
+        border-top: none;
+        border-left: 5px solid var(--pink);
+    }
+
+    article header {
+        position: relative;
+        z-index: 999;
+        background-color: white;
+        text-shadow: none;
+        font-size: small;
+        width: 90%;
+    }
+
+    article header h1 a {
+        color: black;
+    }
+}
