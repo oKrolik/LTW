@@ -1,0 +1,39 @@
+#comments {
+    background: #FFF;
+    padding: 0em 1em 0em 1em;
+}
+
+#comments h1 {
+    font-family: "Poppins", sans-serif;
+}
+
+.user {
+    color: black;
+}
+
+.date {
+    color: black;
+    float: right;
+}
+
+#comments p {
+    padding: 1em;
+    background-color: #EDEFF0;
+}
+
+#comments p::before {
+    content: '\201C';
+    color: #828384;
+}
+
+#comments article p:first-of-type::first-letter {
+    font-weight: normal;
+    text-transform: none;
+    font-size: initial;
+}
+
+#comments article p {
+    font-size: medium;
+    margin-left: 0;
+    margin-right: 0;
+}

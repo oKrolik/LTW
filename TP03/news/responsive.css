@@ -17,9 +17,17 @@
         grid-row-end: 4;
     }
 
+
     nav ul li {
-        padding: 1em 3.4em 1em 3.3em;
+        padding: 1em 3.32em 1em 3.3em;
         list-style: none;
+    }
+
+    article {
+        font-family: "Lora", serif;
+        margin-top: 0em;
+        margin-bottom: 1em;
+        position: relative;
     }
 }
 
@@ -45,32 +53,40 @@
         display: none;
     }
 
+    label {
+        padding: 1em;
+    }
+
     nav {
+        display: flex;
+        flex-direction: column;
+        background-color: #2A2F33;
         text-align: start;
     }
 
     ul {
+        background-color: #FFF;
         width: 100%;
     }
 
     #menu ul {
         display: none;
-        /* Esconde o <ul> por padrão */
     }
 
     #hamburger:checked~ul {
         display: block;
-        /* Mostra o <ul> quando o checkbox está marcado */
     }
 
     .hamburger:before {
-        content: "\2630";
         /* ☰ - Ícone de menu hamburguer */
+        content: "\2630";
+        color: #FFF;
     }
 
     #hamburger:checked+.hamburger:before {
-        content: "\2715";
         /* ✕ - Ícone de fechar (X) quando o checkbox está marcado */
+        content: "\2715";
+        color: #FFF;
     }
 
     nav ul {
