@@ -6,4 +6,4 @@ $sum = $num1+$num2;
 
 echo "<p>$num1 + $num2 = $sum</p>";
 
-echo "<a href='form2.php'>Do another sum.</a>";
+echo "<a href='form2.html'>Do another sum.</a>";
