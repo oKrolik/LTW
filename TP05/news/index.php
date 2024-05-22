@@ -20,20 +20,20 @@ $articles = $stmt->fetchAll();
     <title>Super Legit News</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../style.css" rel="stylesheet">
-    <link href="../layout.css" rel="stylesheet">
-    <link href="../responsive.css" rel="stylesheet">
-    <link href="../comments.css" rel="stylesheet">
-    <link href="../forms.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="layout.css" rel="stylesheet">
+    <link href="responsive.css" rel="stylesheet">
+    <link href="comments.css" rel="stylesheet">
+    <link href="forms.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1><a href="../index.php">Super Legit News</a></h1>
-        <h2><a href="../index.php">Where fake news are born!</a></h2>
+        <h1><a href="index.php">Super Legit News</a></h1>
+        <h2><a href="index.php">Where fake news are born!</a></h2>
         <div id="signup">
-            <a href="../register.php">Register</a>
-            <a href="../login.php">Login</a>
+            <a href="register.php">Register</a>
+            <a href="login.php">Login</a>
         </div>
     </header>
     <nav id="menu">
